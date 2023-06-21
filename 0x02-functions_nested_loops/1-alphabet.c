@@ -1,20 +1,20 @@
 #include "main.h"
+
 /**
- * 
-* print_alphabet - prtints alphabet in lowercase followed by a new line
-*
-* Return: Always 0 (Success)
-*
-*/
+ * print_alphabet - print all alphabet
+ * Description: print all alphabet from a to z
+ * by using the _putchar
+ * Return: Always 0 if there is no error
+ */
 void print_alphabet(void)
 {
-char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
-int i = 0;
-while (i < 26)
-{
-_putchar(alphabet[i]);
-i++;
-}
-_putchar('\n');
+	int c = 'a';
 
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
+
+	_putchar('\n');
 }
