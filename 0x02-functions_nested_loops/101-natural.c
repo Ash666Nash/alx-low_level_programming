@@ -1,19 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
-* main - prints all natural numbers below 1024 that are multiples of 3 or 5
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ * Return: 0
+ */
 int main(void)
 {
-int i, sum;
-for (i = 0; i < 1024; i++)
-{
-if (i % 3 == 0 || i % 5 == 0)
-{
-sum += i;
+	int c = 0;
+	int sum = 0;
+
+	while (c < 1024)
+	{
+		if (c % 3 == 0 || c % 5 == 0)
+		{
+			sum += c;
+		}
+
+		c++;
+	}
+	printf("%i\n", sum);
+	return (0);
 }
-}
-printf("%d\n", sum);
-return (0);
-}i
