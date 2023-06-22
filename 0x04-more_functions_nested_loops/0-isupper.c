@@ -1,25 +1,17 @@
 #include "main.h"
-
 /**
- * _isupper - function checks upperkeys
- * Description: This function checks
- * is the letter is uppsercase or not
- * @c:the argument that passed
- * by the user to check out
- * Return: r holde the value 0 or 1
- */
-
-int _isupper(int c)
+* _isupper - return 1 if c is uppercase
+* @c: character to be checked
+* Return: 1 if c is uppercase, 0 otherwise
+*/
+int _isupper(char c)
 {
+	char a = 'A';
 
-	int r;
-
-	if (c <= 90 && c >= 65)
+	for (; a <= 'Z'; a++)
 	{
-		r = 1;
-	} else
-	{
-		r = 0;
+		if (c == a)
+			return (1);
 	}
-	return (r);
+	return (0);
 }
