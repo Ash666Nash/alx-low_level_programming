@@ -1,11 +1,14 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
 * main - generates random valid passwords
 *
 * Return: Always 0. (Success)
 */
+
 int main(void)
 {
 	int i, n;
@@ -17,7 +20,7 @@ int main(void)
 	srand(time(NULL));
 	while (sum < (2772 - 122))
 	{
-		n = rand() % 62;
+	n = rand() % 62;
 		password[i] = alNum[n];
 		sum = sum + password[i];
 		i++;
